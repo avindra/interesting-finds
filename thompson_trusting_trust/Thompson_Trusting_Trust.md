@@ -11,7 +11,7 @@ _To what extent should one trust a statement that a program is free of Trojan ho
 
 I thank the ACM for this award. I can't help but feel that I am receiving this honor for timing and serendipity as much as technical merit. UNIX swept into popularity with an industry-wide change from central mamframes to autonomous minis. I suspect that Daniel Bobrow[^1] would be here instead of me if he could not afford a PDP-10 and had had to "settle" for a PDP-11. Moreover, the current state of UNIX is the result of the labors of a large number of people.
 
-There is an old adage, "Dance with the one that brought you," which means that I should talk about UNIX. I have not worked on mainstream UNIX in many years, yet I continue to get undeserved credit for the work of others. Therefore, I am not going to talk about UNIX, but I want to thank everyone who has contributed.
+There is an old adage, "Dance with the one that brought you," which means that I should talk about UNIX[^2]. I have not worked on mainstream UNIX in many years, yet I continue to get undeserved credit for the work of others. Therefore, I am not going to talk about UNIX, but I want to thank everyone who has contributed.
 
 That brings me to Dennis Ritchie. Our collaboration has been a thing of beauty. In the ten years that we have worked together, I can recall only one case of miscoordination of work. On that occasion, I discovered that we both had written the same 20-line assembly language program. I compared the sources and was astounded to find that they matched character-for-character. The result of our work together has been far greater than the work that we each contributed.
 
@@ -205,8 +205,8 @@ I have watched kids testifying before Congress. It is clear that they are comple
 ### REFERENCES
 
 [^1]: Bobrow, D.G .. Burchfiel. J.D., Murphy, D.L., and Tomlinson, R.S. TENEX, a paged time-sharing system for the PDP-10. Commun. ACM 15, 3 (Mar. 1972), 135-143.
-[^2]: Kernighan, B.W .. and Ritchie, D.M. The C Programming Language. Prentice-Hall, Englewood Cliffs, N.J., 1978.
-[^3]: Ritchie, D.M., and Thompson, K. The UNIX time-sharing system. Commun. ACM 17, (July 1974), 365-375.
+[^2]: Ritchie, D.M., and Thompson, K. The UNIX time-sharing system. Commun. ACM 17, (July 1974), 365-375.
+[^3]: Kernighan, B.W .. and Ritchie, D.M. The C Programming Language. Prentice-Hall, Englewood Cliffs, N.J., 1978.
 [^4]: Unknown Air Force Document.
 
 _Author's Present Address: Ken Thompson, AT&T Bell Laboratories, Room ZC-519, 600 Mountain Ave., Murray Hill. NJ 07974._
