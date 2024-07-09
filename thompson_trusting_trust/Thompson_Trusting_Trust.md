@@ -26,7 +26,7 @@ More precisely stated, the problem is to write a source program that, when compi
 Figure 1 shows a self-reproducing program in the C[^3] programming language. (The purist will_note that the program is not precisely a self-reproducmg program, but will produce a self-reproducing program.) This entry is much too large to win a prize, but it demonstrates the technique and has two important properties that I need to complete my story: 1) This program can be easily written by another program. 2) This program can contain an arbitrary amount of excess baggage that will
 be reproduced along with the main algorithm. In the example, even the comment is reproduced.
 
-```
+```c
 chars[] = {
     '\t',
     '0',
@@ -96,7 +96,7 @@ This is a deep concept. It is as close to a "learning" program as I have seen. Y
 
 Again, in the C compiler, Figure 3.1 represents the high level control of the C compiler where the routine "compile" is called to compile the next line of source. Figure 3.2 shows a simple modification to the compiler that will deliberately miscompile source whenever a particular pattern is matched. If this were not deliberate, it would be called a compiler "bug." Since it is deliberate, it should be called a "Trojan horse."
 
-```
+```c
 ...
 c = next();
 if(c != '\\')
@@ -110,7 +110,7 @@ if(c == 'n')
 ```
 <p style="text-align: center;"><bold>FIGURE 2.1</bold></p>
 
-```
+```c
 ...
 c = next();
 if(c != '\\')
@@ -126,7 +126,7 @@ if(c == 'v')
 ```
 <p style="text-align: center;"><bold>FIGURE 2.2</bold></p>
 
-```
+```c
 ...
 c = next();
 if(c != '\\')
@@ -149,7 +149,7 @@ Such blatant code would not go undetected for long. Even the most casual perusal
 
 The final step is represented in Figure 3.3. This simply adds a second Trojan horse to the one that already exists. The second pattern is aimed at the C compiler. The replacement code is a Stage I self-reproducing program that inserts both Trojan horses into the compiler. This requires a learning phase as in the Stage II example. First we compile the modified source with the normal C compiler to produce a bugged binary. We install this binary as the official C. We can now remove the bugs from the source of the compiler and the new binary will reinsert the bugs whenever it is compiled. Of course, the login command will remain bugged with no trace in source anywhere.
 
-```
+```c
 compile(s)
 char •s;
 {
@@ -158,7 +158,7 @@ char •s;
 ```
 <p style="text-align: center;"><bold>FIGURE 3.1</bold></p>
 
-```
+```c
 compile(s)
 char •s;
 {
@@ -171,7 +171,7 @@ char •s;
 ```
 <p style="text-align: center;"><bold>FIGURE 3.2</bold></p>
 
-```
+```c
 compile(s)
 char•s;
 {
