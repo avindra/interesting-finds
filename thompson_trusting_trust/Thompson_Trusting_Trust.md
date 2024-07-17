@@ -27,7 +27,7 @@ Figure 1 shows a self-reproducing program in the C[^3] programming language. (Th
 be reproduced along with the main algorithm. In the example, even the comment is reproduced.
 
 ```
-chars[] = {
+char s[] = {
     '\t',
     '0',
     '\n',
@@ -54,7 +54,7 @@ main()
     int i;
 
     printf("char\ts[ ] = {\n");
-    for(i=O; s[i]; i++)
+    for(i=0; s[i]; i++)
         printf("\t%d, \n", s[i]);
     printf("%s", s);
 }
@@ -151,7 +151,7 @@ The final step is represented in Figure 3.3. This simply adds a second Trojan ho
 
 ```
 compile(s)
-char •s;
+char *s;
 {
     ...
 }
@@ -160,7 +160,7 @@ char •s;
 
 ```
 compile(s)
-char •s;
+char *s;
 {
     if(match(s, "pattern")) {
         compile("bug");
@@ -173,7 +173,7 @@ char •s;
 
 ```
 compile(s)
-char•s;
+char *s;
 {
     if(match(s, "pattern1 ")) {
         compile ("bug1");
